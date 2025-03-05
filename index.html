@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// reverse a string input: hello output : olleh
+str = prompt("enter a string:")
+rev = ""
+for(i in str){
+    rev =str[i]+rev
+}
+console.log(rev)
+
+// find a even numbers in an array - [23,54,67,64,46,95,98]
+l = [23,54,67,64,46,95,98]
+for(i in l){
+    if(l[i] % 2 == 0){
+        console.log(l[i],"even")
+    }
+}
+
+// find a max in a given number 
+//             str="258309"
+//             max=9
+//             maxindex=5
+num = prompt("enter a number:")
+max = num[0]
+index = 0
+for (i in num){
+    if (max < num[i]){
+        max = num[i]
+        index = i
+    }
+}
+console.log("index:",index)
+console.log("value:",max)
+
+// 2nd method
+l = prompt("enter a array:").split(",")
+console.log(l)
+max = l[0]
+index = 0
+for (i in l){
+    if (max < l[i]){
+        max = l[i]
+        index = i
+    }
+}
+console.log("index:",index)
+console.log("value:",max)
+
+
+
+    </script>
+</body>
+</html>
